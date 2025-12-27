@@ -1,0 +1,124 @@
+/* ===============================
+   base variables
+   =============================== */
+
+:root {
+  --bg: #0b0614;
+  --fg: #e6d9ff;
+  --link: #b48ead;
+  --accent: #c792ea;
+  --hr: #2a1d3d;
+}
+
+/* automatic light mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #faf7ff;
+    --fg: #1e102a;
+    --link: #6b3fa0;
+    --accent: #7c4dff;
+    --hr: #ddd;
+  }
+}
+
+/* manual override via checkbox */
+#theme-toggle:checked ~ .container {
+  --bg: #faf7ff;
+  --fg: #1e102a;
+  --link: #6b3fa0;
+  --accent: #7c4dff;
+  --hr: #ddd;
+}
+
+/* ===============================
+   layout & typography
+   =============================== */
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 22px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+/* headings */
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5em;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--link);
+  margin-top: 1em;
+}
+
+/* links */
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* navigation */
+
+nav {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+nav a {
+  margin: 0 0.6em;
+}
+
+/* misc */
+
+hr {
+  border: none;
+  border-top: 1px solid var(--hr);
+  margin: 1.5em 0;
+}
+
+ul {
+  padding-left: 1.2em;
+}
+
+li {
+  margin-bottom: 0.4em;
+}
+
+footer {
+  font-size: 0.85rem;
+  text-align: center;
+  opacity: 0.8;
+}
+
+/* toggle */
+
+.toggle {
+  cursor: pointer;
+  font-size: 0.85rem;
+  text-align: center;
+  display: block;
+  margin-top: 0.5em;
+}

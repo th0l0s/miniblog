@@ -1,0 +1,20 @@
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>MiniBlogghi</title>
+<link>/</link>
+
+<item>
+<title>Blog</title>
+<link>/tags/blog/</link>
+<pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+</item>
+
+<item>
+<title>Init</title>
+<link>/tags/init/</link>
+<pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+</item>
+
+</channel>
+</rss>

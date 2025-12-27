@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>post</title>
+  <link rel="stylesheet" href="terminal.css">
+</head>
+<body>
+
+<div id="content"></div>
+
+<script src="js/marked.min.js"></script>
+<script>
+const f = new URLSearchParams(location.search).get("f");
+fetch("posts/" + f)
+  .then(r => r.text())
+  .then(md => {
+    document.getElementById("content").innerHTML =
+      marked.parse(md);
+  });
+</script>
+
+</body>
+</html>

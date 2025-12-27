@@ -1,0 +1,5 @@
+[
+  { "name": "SANS ISC", "url": "https://isc.sans.edu/rssfeed_full.xml" },
+  { "name": "Securelist", "url": "https://securelist.com/feed/" },
+  { "name": "The Hacker News", "url": "https://feeds.feedburner.com/TheHackersNews?format=xml" }
+]
